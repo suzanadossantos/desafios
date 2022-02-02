@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*font-family: 'Sora', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300&display=swap');
+
+/*font-family: 'Inter', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+:root {
+    /*Fontes*/
+    --fonte-p:'Inter', sans-serif;
+    --fonte-h: 'Sora', sans-serif;
+
+    /*Cores*/
+    --blue: #0F9AFE;
+    --white: #FFFFFF;
+    --white200: #EFF8FF;
+    --white400: #EFF8FF;
+    --gray: #6E7275;
+    --gray-light: #DBDBDB;
+    --gray200: #293145;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+    font-family: var(--fonte-h);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--white);
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--gray);
+    font-family: var(--fonte-p);
+}
+
