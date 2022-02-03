@@ -58,6 +58,11 @@ header nav a{
     color: var(--gray);
 }
 
+header nav a:hover{
+    color: var(--blue);
+    transition: 1ms;
+}
+
 section#principal{
     background-color: var(--blue2);
     color: black;
@@ -71,7 +76,7 @@ section#principal{
 section#principal  h1{
     color: black;
     font-family: var(--fonte-h);
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 
 section#principal  button{
@@ -82,6 +87,12 @@ section#principal  button{
     padding: 15px 36px;
     width: 160px;
     font-family: var(--fonte-p);
+    cursor: pointer;
+}
+
+section#principal  button:hover{
+    background-color: var(--gray);
+    transition: 1ms;
 }
 
 div.cont{
@@ -101,6 +112,7 @@ section#funcionamento h2{
     color: black;
     text-align: center;
     font-family: var(--fonte-h);
+    font-size: 1.8em;
 }
 
 section#funcionamento div#imagens{
@@ -126,6 +138,7 @@ section#funcionamento div.informacao{
 section#funcionamento div.informacao h3{
     padding: 25px;
     font-family: var(--fonte-h);
+    font-size: 1.4em;
 }
 
 section#funcionamento div.informacao p{
@@ -159,6 +172,7 @@ section#planos p.valor{
 
 section#planos h2{
     margin: 5px;
+    font-size: 1.8em;
 }
 
 section#planos h2, p{
@@ -183,6 +197,12 @@ section#planos div#caixas button{
     padding: 5px;
     width: 100px;
     margin: 20px;
+    cursor: pointer;
+} 
+
+section#planos div#caixas button:hover{
+    background-color: var(--gray);
+    transition: 1ms;
 }
 
 section#planos div#caixas div.caixa-azul{
@@ -235,6 +255,7 @@ section#contato{
 section#contato h2{
     font-family: var(--fonte-h);
     margin: 10px;
+    font-size: 1.8em;
 }
 
 section#contato p{
@@ -259,16 +280,16 @@ section#contato button{
     padding: 5px;
     width: 100px;
     margin: 20px;
+    cursor: pointer;
+}
+
+section#contato button:hover{
+    background-color: var(--gray);
+    transition: 1ms;
 }
 
 footer{
-    padding: 30px;
+    padding: 25px;
     font-family: var(--fonte-h);
+    text-align: center;
 }
-
-
-
-
-
-
-
