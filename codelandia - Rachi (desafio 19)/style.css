@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
-/*font-family: 'Sora', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/csfuncionamento?family=Sora:wght@100;200;300&display=swap');
 
-/*font-family: 'Inter', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/csfuncionamento?family=Inter:wght@100;200;300&display=swap');
 
 :root {
     /*Fontes*/
@@ -13,6 +11,7 @@
 
     /*Cores*/
     --blue: #0F9AFE;
+    --blue2: #EFF8FF;
     --white: #FFFFFF;
     --white200: #EFF8FF;
     --white400: #EFF8FF;
@@ -26,6 +25,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+p{
+    font-family: var(--fonte-p);
 }
 
 body{
@@ -45,6 +48,7 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     gap: 20px;
     background-color: var(--white);
 }
@@ -52,6 +56,219 @@ header nav{
 header nav a{
     text-decoration: none;
     color: var(--gray);
+}
+
+section#principal{
+    background-color: var(--blue2);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: row;
+}
+
+section#principal  h1{
+    color: black;
+    font-family: var(--fonte-h);
+    font-size: 2.3em;
+}
+
+section#principal  button{
+    border-style: none;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 15px 36px;
+    width: 160px;
     font-family: var(--fonte-p);
 }
+
+div.cont{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+    margin: 20px;
+}
+
+section#funcionamento{
+    padding: 30px;
+}
+
+section#funcionamento h2{
+    color: black;
+    text-align: center;
+    font-family: var(--fonte-h);
+}
+
+section#funcionamento div#imagens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 100px;
+    padding: 15px;
+    margin: 20px;
+}
+
+section#funcionamento div.informacao{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+section#funcionamento div.informacao h3{
+    padding: 25px;
+    font-family: var(--fonte-h);
+}
+
+section#funcionamento div.informacao p{
+    padding: 5px;
+    text-align: center;
+}
+
+section#funcionamento img{
+    width: 50px;
+}
+
+section#app{
+    color: black;
+    background-color: var(--blue2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-direction: row;
+}
+
+section#planos{
+    padding: 20px;
+    margin: 5px;
+}
+
+section#planos p.valor{
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+section#planos h2{
+    margin: 5px;
+}
+
+section#planos h2, p{
+    text-align: center;
+}
+
+section#planos div#caixas{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px;
+}
+
+section#planos div#caixas button{
+    font-family: var(--fonte-p);
+    border-style: none;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    margin: 20px;
+}
+
+section#planos div#caixas div.caixa-azul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    background-color: var(--blue2); 
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section#planos div#caixas div.caixa2{
+    background-color: var(--gray200);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom:20px;
+}
+
+section#planos div#caixas div.caixa2 h3{
+    font-size: 1.4em;
+}
+
+section#planos div#caixas div.caixa2 button#pre{
+    border-style: none;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 5px;
+    width: 90px;
+    font-family: var(--fonte-p);
+}
+
+section#contato{
+    background-image: url(imagens/imagem-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+    padding: 40px;
+}
+
+section#contato h2{
+    font-family: var(--fonte-h);
+    margin: 10px;
+}
+
+section#contato p{
+    margin-bottom: 35px;
+}
+
+section#contato input{
+    border-style: none;
+    background: none;
+    border-bottom: solid 1px white;
+    margin-right: 20px;
+    color: white;
+    width: 200px;
+}
+
+section#contato button{
+    font-family: var(--fonte-p);
+    border-style: none;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    margin: 20px;
+}
+
+footer{
+    padding: 30px;
+    font-family: var(--fonte-h);
+}
+
+
+
+
+
+
 
