@@ -63,6 +63,8 @@ header nav a:hover{
     transition: 1ms;
 }
 
+/* Conteúdo principal */
+
 section#principal{
     background-color: var(--blue2);
     color: black;
@@ -103,6 +105,8 @@ div.cont{
     flex-direction: column;
     margin: 20px;
 }
+
+/* Como funciona */
 
 section#funcionamento{
     padding: 30px;
@@ -150,6 +154,8 @@ section#funcionamento img{
     width: 50px;
 }
 
+/* Nosso app */
+
 section#app{
     color: black;
     background-color: var(--blue2);
@@ -159,6 +165,12 @@ section#app{
     gap: 20px;
     flex-direction: row;
 }
+
+section#app div#imagens_app{
+    cursor: pointer;
+}
+
+/* Planos */
 
 section#planos{
     padding: 20px;
@@ -242,6 +254,8 @@ section#planos div#caixas div.caixa2 button#pre{
     width: 90px;
     font-family: var(--fonte-p);
 }
+
+/* Contato */
 
 section#contato{
     background-image: url(imagens/imagem-fundo.png);
