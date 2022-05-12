@@ -124,19 +124,36 @@ header nav ul li a:hover {
     gap: 20px;
 }
 
-.cont1 .info h1 {
+.cont1 .info .cont-info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cont1 .info .cont-info1 h1 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
 }
 
-.cont1 .info p {
+.cont1 .info .cont-info1 p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     color: var(--cinza);
+}
+
+.cont1 .info .cont-info2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 205px;
+    gap: 20px;
 }
 
 button.btn1 {
@@ -147,6 +164,11 @@ button.btn1 {
     padding: 12px 32px;
     background-color: var(--cinza);
     color: var(--branco);
+    cursor: pointer;
+}
+
+button.btn1:hover{
+    background-color: var(--preto);
 }
 
 p.link {
@@ -162,3 +184,6 @@ p.link {
     width: 660px;
     height: 850px;
 }
+
+/* Conteudo 2 */
+
