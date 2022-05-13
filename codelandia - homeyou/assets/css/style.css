@@ -19,6 +19,13 @@
     --preto: #000000;
 }
 
+body{
+    font-family: var(--fonte);
+    background-color: var(--branco);
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* HEADER */
 
 header {
@@ -138,7 +145,6 @@ header nav ul li a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-right: 205px;
     gap: 20px;
 }
 
@@ -162,7 +168,7 @@ button.btn1:hover {
     height: 850px;
 }
 
-/* Conteudo 2 */
+/* Conteudo 2 - Design Minimalista*/
 
 .conteudo2 {
     display: flex;
@@ -186,8 +192,8 @@ button.btn1:hover {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    width: 585px;
-    height: 182px;
+    width: 100%;
+    height: 200px;
     background-color: var(--cinza);
     color: var(--branco);
 }
@@ -206,7 +212,7 @@ button.btn1:hover {
     font-size: 16px;
 }
 
-/* Conteudo 3 */
+/* Conteudo 3 - Galeria*/
 
 .conteudo3 {
     display: flex;
@@ -247,7 +253,7 @@ button.btn1:hover {
     height: 550px;
 }
 
-/* Conteudo 4 */
+/* Conteudo 4 - Orçamento*/
 
 .conteudo4 {
     display: flex;
@@ -256,6 +262,8 @@ button.btn1:hover {
     justify-content: space-around;
     padding: 50px;
     gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .conteudo4 h3 {
@@ -280,6 +288,8 @@ button.btn1:hover {
     gap: 10px;
     background-color: var(--branco);
     color: var(--cinza);
+    font-weight: 500;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -295,11 +305,10 @@ button.btn1:hover {
     width: 100%;
     height: 321px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
-    gap: 70px;
-    padding-left: 40px;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 .conteudo-footer .cont1,
@@ -323,14 +332,6 @@ button.btn1:hover {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 18px;
-}
-
-.conteudo-footer .info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
 }
 
 /* Estilo para todos */
