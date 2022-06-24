@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px){
+    
+    header{
+      flex-direction: column;
+    }  
+
+    header nav .login{
+        display: none;
+    }
+
+    section.orcamento{
+        flex-direction: column;
+    }
+
+    section.orcamento .cont1{
+        align-items: center;
+    }
+
+    section.outras-inf{
+        flex-direction: column-reverse;
+    }
+
+    section.outras-inf div.inf{
+        align-items: center;
+    }
+
+    section.outras-inf div.inf div.celular{
+        flex-direction: column;
+    }
+
+    section.outras-inf div.inf div.celular div.botoes{
+        flex-direction: column;
+    }
+
+    section.outras-inf div.inf div.celular input{
+        width: 200px;
+    }
+
+    section.outras-inf div.inf div.celular button{
+        width: 200px;
+    }
+
+    section.opinioes{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer section.logo-1{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
