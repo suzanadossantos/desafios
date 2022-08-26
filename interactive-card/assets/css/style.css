@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Configurações gerais */
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --black: #000000;
+    --violet1: hsl(270, 3%, 87%);
+    --violet2: hsl(279, 6%, 55%);
+    --violet3: hsl(278, 68%, 11%);
+
+    --font: 'Space Grotesk', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+body{
+    background: var(--white) url(../images/bg-main-mobile.png);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
