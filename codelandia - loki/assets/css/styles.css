@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --amarelo: #FFA800;
+    --branco: #FFF;
+    --azul: #0072D2;
+    --cinza: #131318;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'B612', sans-serif;
+    overflow-x: hidden;
+}
+
+section.fundo{
+    background: url('../imagens/image-fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--branco);
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h2{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+h1{
+    padding: 10px;
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+h2{
+    padding: 20px;
+    font-family: 'B612', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+section.conteudo{
+    position: relative;
+    z-index: 1;
+}
+
+section.conteudo img.capa{
+    display: none;
+}
+
+section.conteudo div.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+div.sobre div.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+div.sobre div.info p#tempo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+div.cinza{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza);
+    border-radius: 20px 20px 0px 0px;
+}
+
+div.cinza div.botoes{
+    padding: 20px;
+}
+
+div.cinza div.botoes #assistir{
+    cursor: pointer;
+    padding: 10px 13px;
+    color: var(--branco);
+    background-color: var(--azul);
+    border: 2px solid var(--azul);
+    border-radius: 5px;
+}
+
+div.botoes #assistir:hover{
+    opacity: 0.6;    
+}
+
+div.cinza div.botoes #trailer{
+    cursor: pointer;
+    padding: 10px 25px;
+    color: var(--branco);
+    background-color: var(--cinza);
+    border: 2px solid var(--branco);
+    border-radius: 5px;
+}
+
+div.cinza p{
+    padding: 15px;
+}
+
+section.efeito{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 650px){
+
+    section.conteudo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 60px 25px;
+    }
+
+    section.conteudo .imagem{
+        display: flex;
+        padding-top: 20px;
+        height: 100%;
+    }
+
+    section.conteudo img.capa{
+        display: block;
+    }
+    
+    section.conteudo div.sobre{
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    section.conteudo div.sobre .info{
+        padding-left: 10px;
+    }
+
+    section.fundo{
+        background-size: cover;
+    }
+
+    div.cinza{
+        flex-direction: column-reverse;
+        background: transparent;
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    div.cinza p{
+        width: 50vw;
+    }
+}
