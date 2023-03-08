@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'sf';
+    src: url(../fonts/SF-Pro-Display-Black.otf);
+}
+
+:root{
+    --pink: #ED2590;
+    --blue-light: #D9E6F7;
+    --dark-light: #4B4B4B;
+    --gray: #B4AEAE;
+    --white: #FDFEFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'sf';
+    background-color: var(--blue-light);
+}
+
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: var(--white);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+header nav{
+    display: none;
+}
+
+main{
+    padding: 20px;
+    margin: auto;
+}
+
+main section.imagem{
+    display: none;
+}
+
+main section.login{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    margin: auto 25%;
+    border-radius: 20px;
+}
+
+main section.login div.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    color: var(--pink);
+}
+
+main section.login input{
+    background-color: var(--blue-light);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main section.login div{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+main section.login div label{
+    color: var(--dark-light);
+    font-size: 0.8em;
+}
+
+main section.login button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main section.login button.entrar{
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+main section.login button.criar{
+    background-color: var(--blue-light);
+    color: var(--pink);
+}
+
+main section.login a{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    color: var(--pink);
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--pink);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5%;    
+    text-align: center;
+}
