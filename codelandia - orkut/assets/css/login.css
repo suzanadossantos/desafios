@@ -97,12 +97,17 @@ main section.login button.entrar{
     color: var(--white);
 }
 
+main section.login button.entrar a{
+    color: var(--white);
+    text-decoration: none;
+}
+
 main section.login button.criar{
     background-color: var(--blue-light);
     color: var(--pink);
 }
 
-main section.login a{
+main section.login a.link{
     font-size: 0.8em;
     text-align: center;
     padding: 10px;
