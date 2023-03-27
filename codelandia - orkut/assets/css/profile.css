@@ -28,3 +28,55 @@ html, body {
     min-height: 100%;
     overflow-x: hidden;
 }
+
+header{
+    background-color: var(--white);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav{
+    display: none;
+}
+
+header div.pesquisa{
+    display: none;
+}
+
+header div.perfil{
+    cursor: pointer;
+}
+
+header div.perfil p.nome{
+    display: none;
+}
+
+header div.perfil img{
+    width: 30px;
+    cursor: pointer;
+}
+
+header div.perfil span{
+    width: 30px;
+    cursor: pointer;
+}
+
+header div.perfil:hover{
+    color: #ED2590;
+}
+
+header div.perfil div.perfil{
+    display: none;
+}
+
+header div.perfil div.perfil_active{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
