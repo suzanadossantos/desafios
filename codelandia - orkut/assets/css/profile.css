@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'sf';
-    src: url(../fonts/SF-Pro-Display-Black.otf);
+    src: url(../fonts/SF-Pro-Display-Light.otf);
 }
 
 :root{
@@ -21,6 +21,7 @@
 
 body{
     font-family: 'sf';
+    font-weight: bold;
     background-color: var(--blue-light);
 }
 
@@ -79,4 +80,249 @@ header div.perfil div.perfil_active{
     align-items: center;
     gap: 10px;
     padding-top: 10px;
+}
+
+main{
+    padding: 20px;
+}
+
+main div.pesquisa{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color:var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 80px;
+}
+
+main div.pesquisa span{
+    cursor: pointer;
+    color: var(--dark-light);
+    font-size: 1.6em;
+}
+
+main input#btnPesquisa{
+    padding: 5px;
+    float: right;
+    background-color:transparent;
+    padding-right: 5px;
+    border: none;
+    font-size:15px;
+    width: 100%;
+}
+
+main div.perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 80px;
+    text-align: center;
+}
+
+main div.perfil div.detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    width: 100%;
+}
+
+main div.perfil div.detalhes img{
+    border: 4px solid var(--pink);
+    border-radius: 50%;
+    width: 20vw;
+}
+
+main div.perfil div.editar{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    color: var(--pink);
+    width: 100%;
+}
+
+main div.perfil div.editar p{
+    cursor: pointer;
+}
+
+main div.perfil div.editar p:hover{
+    text-decoration: underline;
+}
+
+
+main div.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    margin: 20px 80px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+main div.informacoes h2{
+    font-size: 1.4em;
+}
+
+main div.informacoes span#frase{
+    font-size: .8em;
+    background-color: #EFF3F8;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main div.informacoes .emojis{
+    margin: 20px 0px;
+}
+
+main div.informacoes .emojis .divisao{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 15px 0px;
+}
+
+main div.informacoes .emojis .divisao span#estrela{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    color: var(--gray);
+}
+
+main div.informacoes .emojis .divisao span.amarelo{
+    color: #FACF41;
+}
+
+main div.informacoes .emojis .divisao span.azul{
+    color: #26CAFF;
+}
+
+main div.informacoes .emojis .divisao span.rosa{
+    color: #ED2590;
+}
+
+main div.informacoes > p{
+    font-size: 0.9em;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+main div.informacoes > p > span{
+    color: var(--dark-light);
+    margin-left: 10px;
+    padding: 5px;
+}
+
+main div.informacoes > p > span.borda{
+    border-radius: 18px;
+    border: 2px solid var(--pink);
+}
+
+main div.informacoes > p > span.mais{
+    display: none;
+}
+
+main div.informacoes > p > span.todos{
+    cursor: pointer;
+    color: var(--pink);
+}
+
+main div.informacoes > p > span.todos:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px){
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header nav a{
+        text-decoration: none;
+        color: var(--dark-light);
+    }
+
+    header nav a#rosa{
+        color: var(--pink);
+    }
+    
+    header div.pesquisa{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        background-color: #EFF3F8;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    header div.pesquisa span{
+        cursor: pointer;
+        color: var(--dark-light);
+        font-size: 1.3em;
+    }
+    
+    header input#btnPesquisa{
+        padding: 5px;
+        float: right;
+        background-color: #EFF3F8;
+        padding-right: 5px;
+        border: none;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    header div.perfil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header div.perfil p.nome{
+        display: block;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start ;
+    }
+    
+    main div.pesquisa{
+        display: none;
+    }
+
+    main div.informacoes .emojis{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main div.informacoes > p > span.mais{
+        display: inline;
+    }
 }
