@@ -25,7 +25,7 @@ body{
     background-color: var(--blue-light);
 }
 
-html, body {
+html, body{
     min-height: 100%;
     overflow-x: hidden;
 }
@@ -132,7 +132,7 @@ main div.perfil div.detalhes{
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
     background-color: var(--white);
     width: 100%;
@@ -141,7 +141,7 @@ main div.perfil div.detalhes{
 main div.perfil div.detalhes img{
     border: 4px solid var(--pink);
     border-radius: 50%;
-    width: 20vw;
+    width: 15vw;
 }
 
 main div.perfil div.editar{
@@ -160,7 +160,6 @@ main div.perfil div.editar p{
 main div.perfil div.editar p:hover{
     text-decoration: underline;
 }
-
 
 main div.informacoes{
     display: flex;
@@ -243,11 +242,128 @@ main div.informacoes > p > span.todos{
     color: var(--pink);
 }
 
-main div.informacoes > p > span.todos:hover{
+.todos{
+    cursor: pointer;
+    color: var(--pink);
+}
+
+.todos:hover{
     text-decoration: underline;
 }
 
-@media screen and (min-width: 1200px){
+main div.amigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 80px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+main div.amigos > span.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+main div.amigos div.perfil_amigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+main div.amigos div.perfil_amigos div.divisao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+main div.amigos div.perfil_amigos div.divisao div{
+    text-align: center;
+    padding: 5px;
+}
+
+main div.comunidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 80px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+main div.comunidades > span.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+main div.comunidades div.img_comunidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+main div.comunidades div.img_comunidades div.divisao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+main div.comunidades div.img_comunidades div.divisao div{
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 470px){
+    main div.pesquisa{
+        margin: 20px 10px;
+    }
+
+    main div.perfil{
+        margin: 20px 10px;
+    }
+
+    main div.informacoes{
+        margin: 20px 10px;
+    }
+
+    main div.amigos{
+        margin: 20px 10px;
+    }
+
+    main div.comunidades{
+        margin: 20px 10px;
+    }
+
+    main div.amigos div.perfil_amigos div.divisao{
+        flex-direction: column;
+    }
+
+    main div.comunidades div.img_comunidades div.divisao{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1300px){
     header nav{
         display: flex;
         flex-direction: row;
@@ -309,11 +425,21 @@ main div.informacoes > p > span.todos:hover{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start ;
+        align-items: flex-start;
+        margin: 20px;
     }
-    
+
     main div.pesquisa{
         display: none;
+    }
+
+    main div.perfil{
+        padding: 0px 20px;
+    }
+
+    main div.informacoes{
+        padding: 35px;
+        margin: 20px 0px;
     }
 
     main div.informacoes .emojis{
@@ -324,5 +450,27 @@ main div.informacoes > p > span.todos:hover{
 
     main div.informacoes > p > span.mais{
         display: inline;
+    }
+    
+    div.amigos_comunid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    div.amigos{
+        flex-wrap: nowrap;
+        padding: 0;
+        margin: 50px;
+    }
+
+    div.comunidades{
+        padding: 0;
+        margin: 50px;
+    }
+
+    main div.amigos div.perfil_amigos div.divisao div img{
+        cursor: pointer;
     }
 }
