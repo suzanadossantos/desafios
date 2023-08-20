@@ -15,7 +15,9 @@
 
     --preto: #272727;
     --branco: #FFFFFF;
+
     --cinza: #6A6969;
+    --cinza-claro: #F3F4F8;
 
     --principal: 'Poppins', sans-serif;
 }
@@ -25,4 +27,319 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cinza-claro);
+    font-family: var(--principal);
+}
+
+/* ---Header--- */
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+/* menu */
+
+aside.menu{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--branco);
+    width: 220px;
+    height: 100%;
+    box-shadow: 1px 0px 2px #8080804b;
+    border-radius: 7px;
+}
+
+aside.menu nav.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+aside.menu nav.sidebar button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-family: var(--principal);
+}
+
+aside.menu nav.sidebar button:hover{
+    transition: 7ms;
+    border-radius: 4px;
+    background-color: var(--cinza-claro);
+}
+
+aside.menu nav.sidebar button a:hover, aside.menu nav.sidebar button i:hover{
+    color: var(--roxo);
+}
+
+aside.menu nav.sidebar button i{
+    color: var(--preto);
+}
+
+aside.menu nav.sidebar button a{
+    color: var(--preto);
+    font-size: 1.2em;
+}
+
+aside.menu-active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--branco);
+    width: 80px;
+    height: 100%;
+    box-shadow: 1px 0px 2px #808080;
+}
+
+aside.menu-active nav.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+aside.menu-active nav.sidebar button{
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+aside.menu-active nav.sidebar button#active{
+    background-color: var(--cinza-claro);
+    border-radius: 4px;
+}
+
+aside.menu-active nav.sidebar button:hover{
+    transition: 7ms;
+    border-radius: 4px;
+    background-color: var(--cinza-claro);
+}
+
+aside.menu-active nav.sidebar button i{
+    color: var(--preto);
+}
+
+aside.menu-active nav.sidebar button#active i{
+    color: var(--roxo); 
+}
+
+aside.menu-active nav.sidebar button a{
+    display: none;
+}
+
+button.button-menu{
+    display: none;
+}
+
+button.button-close{
+    display: none;
+}
+
+hr{
+    width: 100%;
+}
+
+div.funcoes_mobile{
+    display: none;
+}
+
+/* ---Main--- */
+
+main{
+    padding-top: 20px;
+    padding-left: 240px;
+    padding-right: 6px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+main section.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.funcoes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+div.funcoes i{
+    cursor: pointer;
+}
+
+div.funcoes img{
+    cursor: pointer;
+    width: 25px;
+}
+
+div.usuario p{
+    color: var(--cinza);
+}
+
+/* grafico do main */
+
+section.grafico{
+    background-color: white;
+    margin: 20px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+section.grafico h3{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section.grafico div.dados{
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    justify-content: space-around;
+}
+
+section.grafico div.valores{
+    margin-bottom: 20px;
+}
+
+section.grafico div.valores p{
+    margin-bottom: 10px;
+}
+
+section.grafico div.barras{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+section.grafico div.barras div{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section.grafico div.barras span{
+    display: block;
+    width: 20px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.301);
+    border-radius: 5.3px;
+}
+
+section.grafico div.barras span#fev{
+    height: 30px;
+}
+
+section.grafico div.barras span#mar{
+    height: 90px;
+}
+
+section.grafico div.barras span#abr{
+    height: 110px;
+}
+
+section.grafico div.barras span#jun{
+    height: 120px;
+}
+
+section.grafico div.barras span#jul{
+    height: 150px;
+}
+
+section.grafico div.barras span#ago{
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.692);
+}
+
+section.grafico div.barras span:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.692);
+}
+
+
+/* mobile */
+
+@media (width < 800px){
+    button.button-menu{
+        cursor: pointer;
+        display: block;
+        background: transparent;
+        border: none;
+        padding: 15px 10px;
+        font-size: 20px;
+    }
+    
+    button.button-close{
+        cursor: pointer;
+        display: block;
+        background: transparent;
+        border: none;
+        color: var(--preto);
+        font-size: 20px;
+        padding: 15px 10px;
+    }
+
+    aside.menu-active nav.sidebar button i:hover{
+        color: var(--roxo);
+    }
+    
+    aside.menu{
+        display: none;
+    }
+    
+    aside#aside nav.sidebar img{
+        display: none;
+    }
+
+    div.funcoes_mobile{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    div.funcoes_mobile i{
+        cursor: pointer;
+    }
+    
+    div.funcoes_mobile img{
+        cursor: pointer;
+        width: 25px;
+    }
+
+    main{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    main div.funcoes{
+        display: none;
+    }
 }
