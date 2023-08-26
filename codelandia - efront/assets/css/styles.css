@@ -201,18 +201,26 @@ div.usuario p{
     color: var(--cinza);
 }
 
+section.grafico_historico{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin: 0 20px;
+}
+
 /* grafico do main */
 
 section.grafico{
     background-color: white;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 4px;
     padding: 10px;
+    width: 70%;
 }
 
 section.grafico h3{
     text-align: left;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -222,6 +230,7 @@ section.grafico div.dados{
     flex-direction: row;
     align-items: inherit;
     justify-content: space-around;
+    padding: 10px;
 }
 
 section.grafico div.valores{
@@ -249,19 +258,19 @@ section.grafico div.barras span{
     display: block;
     width: 20px;
     height: 100px;
-    background-color: rgba(0, 0, 255, 0.301);
+    background-color: var(--roxo-claro);
     border-radius: 5.3px;
 }
 
-section.grafico div.barras span#fev{
+section.grafico div.barras span.fev{
     height: 30px;
 }
 
-section.grafico div.barras span#mar{
+section.grafico div.barras span.mar{
     height: 90px;
 }
 
-section.grafico div.barras span#abr{
+section.grafico div.barras span.abr{
     height: 110px;
 }
 
@@ -275,16 +284,79 @@ section.grafico div.barras span#jul{
 
 section.grafico div.barras span#ago{
     height: 50px;
-    background-color: rgba(0, 0, 255, 0.692);
+    background-color: var(--roxo);
 }
 
 section.grafico div.barras span:hover{
     cursor: pointer;
-    background-color: rgba(0, 0, 255, 0.692);
+    background-color: var(--roxo);
 }
 
+section.historico{
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 4px;
+    padding: 10px;
+    width: 70%;
+}
+
+section.historico h3{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section.grafico_historico section.historico span{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--roxo-claro2);
+    color: var(--roxo);
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (width > 1400px){
+    section.grafico{
+        width: 45%;
+    }
+
+    section.historico{
+        width: 45%;
+    }
+}
 
 /* mobile */
+
+@media (width < 450px){
+    body{
+        margin: 10px;
+    }
+
+    section.grafico{
+        width: 100%;
+    }
+
+    section.grafico div.barras div.ago{
+        display: none;
+    }
+
+    section.grafico div.barras div.mai{
+        display: none;
+    }
+
+    section.grafico div.barras div.jun{
+        display: none;
+    }
+
+    section.historico{
+        width: 100%;
+    }
+
+    section.historico span{
+        flex-direction: column;
+    }
+}
 
 @media (width < 800px){
     button.button-menu{
@@ -340,6 +412,30 @@ section.grafico div.barras span:hover{
     }
 
     main div.funcoes{
+        display: none;
+    }
+
+    section.grafico_historico{
+        display: block;
+    }
+
+    section.grafico div.dados{
+        display: flex;
+        flex-direction: row;
+        align-items: inherit;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    section.grafico div.barras{
+        gap: 15px;
+    }
+
+    section.grafico div.barras div.fev{
+        display: none;
+    }
+    
+    section.grafico div.barras div.mar{
         display: none;
     }
 }
