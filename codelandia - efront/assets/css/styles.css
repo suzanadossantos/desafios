@@ -316,6 +316,43 @@ section.grafico_historico section.historico span{
     padding: 10px;
 }
 
+section.detalhes{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 20px;
+}
+
+section.detalhes div{
+    background-color: var(--branco);
+    padding: 15px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+section.detalhes div p.valor{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.detalhes div span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 7px;
+    width: 100px;
+    background-color: var(--verde-claro);
+    color: var(--verde);
+}
+
+section.detalhes div span.red{
+    background-color: var(--vermelho-claro);
+    color: var(--vermelho);
+}
+
 @media (width > 1400px){
     section.grafico{
         width: 45%;
@@ -437,5 +474,15 @@ section.grafico_historico section.historico span{
     
     section.grafico div.barras div.mar{
         display: none;
+    }
+}
+
+@media screen and (max-width: 900px){
+    section.detalhes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 17vw;
     }
 }
